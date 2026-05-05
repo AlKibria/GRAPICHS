@@ -3,10 +3,17 @@
 	<GL/glut.h>
 	<math.h>
 
+<<<<<<< HEAD
 1771997695 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glut.h
 	"freeglut_std.h"
 
 1771997695 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_std.h
+=======
+1772085384 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glut.h
+	"freeglut_std.h"
+
+1772085384 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_std.h
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -880,6 +887,7 @@
 	<GL/glut.h>
 	<math.h>
 
+<<<<<<< HEAD
 1777998491 source:d:\spring 25-26\graphics\project\summerproject\main.cpp
 	<GL/glut.h>
 	<math.h>
@@ -889,6 +897,13 @@
 	<math.h>
 
 1778006550 source:c:\users\user\downloads\summerproject 5\summerproject 3\summerproject\main.cpp
+=======
+1777880601 source:d:\spring 25-26\graphics\project\summerproject\main.cpp
+	<GL/glut.h>
+	<math.h>
+
+1777914543 source:c:\users\user\downloads\graphics project\summerproject 2\summerproject\main.cpp
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 	<GL/glut.h>
 	<math.h>
 

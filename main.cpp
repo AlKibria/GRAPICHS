@@ -8,6 +8,7 @@ int isFoggy = 0;
 float cloudPos1 = 0.0f, cloudPos2 = 0.0f;
 float cloudSpeed = 1.0f;
 
+<<<<<<< HEAD
 float fishX = -50.0f;
 float fishY = -40.0f;
 float fishSpeed = 0.05f;
@@ -16,6 +17,10 @@ float human2PosY = -200.0f;
 float human2Speed = 0.4f;
 
 const int numRaindrops = 2000;
+=======
+
+const int numRaindrops = 8000;
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 float raindropX[numRaindrops];
 float raindropY[numRaindrops];
 float raindropSpeed[numRaindrops];
@@ -163,6 +168,10 @@ void drawskyBG()
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 //mountain color
 
 void drawMountain1()
@@ -429,23 +438,37 @@ void drawFish()
 {
     glColor3f(0.0f,0.0f,0.0f);
     glBegin(GL_QUADS);
+<<<<<<< HEAD
     glVertex2f(fishX+ 117.5577587811762, -33.1712359556068 +fishY);
     glVertex2f(fishX+ 124.7645901202613, -35.3332853576662 +fishY);
     glVertex2f(fishX+ 130.9048104211618, -32.6523440991125 +fishY);
     glVertex2f(fishX+ 124.5339715174106, -30.5479493477747 +fishY);
+=======
+    glVertex2f(117.5577587811762, -33.1712359556068);
+    glVertex2f(124.7645901202613, -35.3332853576662);
+    glVertex2f(130.9048104211618, -32.6523440991125);
+    glVertex2f(124.5339715174106, -30.5479493477747);
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 
     glEnd();
 
     glColor3f(0.0f, 0.0f, 0.0f);
     glBegin(GL_TRIANGLES);
+<<<<<<< HEAD
     glVertex2f(fishX+ 130.9048104211618, -32.6523440991125 +fishY);
     glVertex2f(fishX+ 134, -34 +fishY);
     glVertex2f(fishX+ 134.0181615596465, -31.326287132516 +fishY);
+=======
+    glVertex2f(130.9048104211618, -32.6523440991125);
+    glVertex2f(134, -34);
+    glVertex2f(134.0181615596465, -31.326287132516);
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     glEnd();
 
 
 }
 
+<<<<<<< HEAD
 void updateFish()
 {
     fishX -= fishSpeed;   // LEFT direction
@@ -456,6 +479,8 @@ void updateFish()
     fishY = -45 + sin(fishX * 0.05f) * 15;
 }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 //Road
 void drawRoad()
 {
@@ -847,7 +872,10 @@ void drawLamp()
 //road side lamp
 void drawRLamp()
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     //khuti
     glColor3f(0.30f, 0.32f, 0.35f);
     glBegin(GL_QUADS);
@@ -902,6 +930,7 @@ void drawRLamp()
     glEnd();
 }
 
+<<<<<<< HEAD
 void drawLampLight()
 {
     if (!isNight) return;
@@ -942,6 +971,8 @@ void drawLampLight()
     glDisable(GL_BLEND);
 }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 //fishing bowl
 void drawBowl()
 {
@@ -966,6 +997,7 @@ void drawBowl()
     glEnd();
 }
 
+<<<<<<< HEAD
 
 void drawBowl1()
 {
@@ -990,6 +1022,8 @@ void drawBowl1()
     glEnd();
 }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 //fishing pole
 void drawFishingPole()
 {
@@ -1030,6 +1064,7 @@ void drawFishingPole()
 
 }
 
+<<<<<<< HEAD
 void drawFishingPole1()
 {
     glBegin(GL_QUADS);
@@ -1069,6 +1104,8 @@ void drawFishingPole1()
 
 }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
  //DDA Line
 
    /* x1 = 62.95, y1 = 71.06
@@ -1115,8 +1152,11 @@ void drawfishingRope(float x1, float y1, float x2, float y2)
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 void drawGateRoad()
 {
     if (isNight)
@@ -1358,6 +1398,7 @@ void drawHuman()
 }
 
 
+<<<<<<< HEAD
 //Beizer Curve
 //counter human smile
 struct Point {
@@ -1399,6 +1440,8 @@ void drawBezierCurve(Point p0, Point p1, Point p2, Point p3)
 
 
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 void drawCounterHuman()
 {
     //body
@@ -1491,18 +1534,26 @@ void drawCounterHuman()
     glColor3f(1.0f, 0.8f, 0.6f);
     drawCircle(-294.0442681298111, 56.0258163091665, 11.36934158, 300 );
     //eyes
+<<<<<<< HEAD
     glColor3f(0.0f, 0.0f, 0.0f);
+=======
+    glColor3f(1.0f, 1.0f, 1.0f);
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     drawCircle(-298.5113372450116, 58.9786518786618, 3.40171402, 300);
     drawCircle(-290, 60, 3.678578553, 300);
 
     //mouth
+<<<<<<< HEAD
     /*
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     glColor3f(0.0f, 0.0f, 0.0f);
     glBegin(GL_LINES);
     glVertex2f(-296.9610873182411, 49.8432505230676);
     glVertex2f(-290, 50);
 
     glEnd();
+<<<<<<< HEAD
     */
 
     //smile
@@ -1514,6 +1565,8 @@ void drawCounterHuman()
     glColor3f(0, 0, 0);
     drawBezierCurve(p0, p1, p2, p3);
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 
 }
 
@@ -1549,6 +1602,7 @@ void drawBird()
 
 }
 
+<<<<<<< HEAD
 //Brasalham Midpoint Line
 void BresalhamMidLine(float x1, float y1, float x2, float y2)
 {
@@ -1584,6 +1638,8 @@ void BresalhamMidLine(float x1, float y1, float x2, float y2)
 
     glEnd();
 }
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 
 //Ticket price list
 void drawList()
@@ -1600,9 +1656,14 @@ void drawList()
     //1
     glColor3f(0, 0, 0);
     glBegin(GL_LINES);
+<<<<<<< HEAD
     BresalhamMidLine(-237.6407955146785, 75.969235672092,-222.8512080597141, 76.0500530898911);
    // glVertex2f(-237.6407955146785, 75.969235672092);
    // glVertex2f(-222.8512080597141, 76.0500530898911);
+=======
+    glVertex2f(-237.6407955146785, 75.969235672092);
+    glVertex2f(-222.8512080597141, 76.0500530898911);
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 
     glEnd();
 
@@ -1631,6 +1692,7 @@ void drawList()
     glEnd();
 }
 
+<<<<<<< HEAD
 
 //xc = circle center x
 //yc = circle center y
@@ -1954,6 +2016,8 @@ void drawWinterPoolCircle()
 
 
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -2054,11 +2118,14 @@ void display() {
     //COUNTER
     drawCounter();
 
+<<<<<<< HEAD
     glPushMatrix();
     glTranslatef(0.0f, human2PosY, 0.0f);
     drawHuman2();
     glPopMatrix();
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     //pond
     if (isNight)
     {
@@ -2071,6 +2138,7 @@ void display() {
     drawPond();
 
     drawFish();
+<<<<<<< HEAD
     updateFish();
 
     //winter pond water
@@ -2106,6 +2174,19 @@ void display() {
     glColor3f(0.93f, 0.51f, 0.93f);
     drawFishingPole1();
 
+=======
+    drawBin();
+    drawLamp();
+    drawRLamp();
+    drawBowl();
+
+
+    drawHuman();
+
+    glColor3f(0.93f, 0.51f, 0.93f);
+    drawFishingPole();
+
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     if (isNight)
     {
         glColor3f(0.35f, 0.25f, 0.05f); //for night
@@ -2121,9 +2202,12 @@ void display() {
     glColor3f(0.85f, 0.75f, 0.50f);
     drawfishingRope( 62.9539, 41.3527, 62.9539, 71.0651);
 
+<<<<<<< HEAD
     glColor3f(0.85f, 0.75f, 0.50f);
     drawfishingRope( 150+62.9539, 41.3527, 150+62.9539, 71.0651);
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     //drawFog();
 
     // Draw rain effect
@@ -2134,6 +2218,7 @@ void display() {
     updateSnow();
 
     drawFog();
+<<<<<<< HEAD
 
     glColor3f(0.5f, 0.0f, 0.0f);
     drawText(-308.2617543124225, 105.6085316375694, "Ticket Counter");
@@ -2142,6 +2227,12 @@ void display() {
     glFlush();
 
 
+=======
+    glutSwapBuffers();
+
+
+    glFlush();
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 }
 
 //Keyboard function
@@ -2151,22 +2242,28 @@ void keyboard(unsigned char key, int x, int y)
     {
         case 'w':
         isWinter = !isWinter;
+<<<<<<< HEAD
         if(isWinter)
             {
                 isRaining = 0;
                 isFoggy = 0;
             }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
         glutPostRedisplay();
         break;
 
         case 'r':
         isRaining = !isRaining;
+<<<<<<< HEAD
         if(isRaining)
             {
                 isWinter = 0;
             }
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
         isFoggy = !isFoggy;
         glutPostRedisplay();
         break;
@@ -2188,6 +2285,7 @@ void mouse(int button, int state, int x, int y)
 
 void timer(int value)
 {
+<<<<<<< HEAD
     cloudPos1 += cloudSpeed;
     cloudPos2 += cloudSpeed;
 
@@ -2201,12 +2299,24 @@ void timer(int value)
 
     updateRaindrops();
     updateHuman2();
+=======
+
+    cloudPos1 += cloudSpeed ;
+    cloudPos2 += cloudSpeed ;
+    if (cloudPos1 > 715) cloudPos1 = -800.0f;
+    if (cloudPos2 > 715) cloudPos2 = -800.0f;
+
+    updateRaindrops();
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 
     glutPostRedisplay();
     glutTimerFunc(25, timer, 0);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
 void init() {
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glMatrixMode(GL_PROJECTION);
