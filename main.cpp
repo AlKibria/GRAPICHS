@@ -1,5 +1,7 @@
 #include<GL/glut.h>
 #include<math.h>
+#include<bits/stdc++.h>
+using namespace std;
 
 int isNight = 0;
 int isRaining = 0;
@@ -274,7 +276,7 @@ void drawMountain1()
     }
     else
     {
-       glColor3f(0.6f, 0.4f, 0.2f);
+        glColor3f(0.6f, 0.4f, 0.2f);
     }
     glBegin(GL_TRIANGLES);
     glVertex2f(-31.444,250.65);
@@ -284,7 +286,7 @@ void drawMountain1()
     glEnd();
 
     //3rd mountain
-   if (isNight)
+    if (isNight)
     {
         glColor3f(0.2f, 0.1f, 0.05f);  // Darker for night
     }
@@ -344,7 +346,7 @@ void drawSun()
 
     if (isWinter || isNight)
     {
-    glColor3f(1.0f, 0.9f, 0.9f); // soft winter
+        glColor3f(1.0f, 0.9f, 0.9f); // soft winter
     }
     else
     {
@@ -393,7 +395,7 @@ void drawPond()
 {
     if (isWinter)
     {
-    glColor3f(0.8f, 0.9f, 1.0f); // frozen look
+        glColor3f(0.8f, 0.9f, 1.0f); // frozen look
     }
     else if (isNight)
     {
@@ -746,7 +748,7 @@ void drawCounter()
     glEnd();
 
     //front middle
-     glColor3f(0.78f, 0.80f, 0.82f);
+    glColor3f(0.78f, 0.80f, 0.82f);
 
     glBegin(GL_POLYGON);
     glVertex2f(-343.5309999090373, -10.0592658288248);
@@ -768,7 +770,7 @@ void drawCounter()
     glEnd();
 
     //front down
-   glColor3f(0.72f, 0.45f, 0.25f);
+    glColor3f(0.72f, 0.45f, 0.25f);
 
     glBegin(GL_POLYGON);
     glVertex2f(-342.5377660428576, -39.2910260126577);
@@ -940,7 +942,7 @@ void drawLampLight()
     glVertex2f(-81.9951001553641, 105.108327510386);
     // outer fade
 
-        glColor4f(1.0f, 1.0f, 0.6f, 0.0f);
+    glColor4f(1.0f, 1.0f, 0.6f, 0.0f);
 
 
     glEnd();
@@ -955,7 +957,7 @@ void drawLampLight()
     glVertex2f(400, 112);
     // outer fade
 
-        glColor4f(1.0f, 1.0f, 0.6f, 0.0f);
+    glColor4f(1.0f, 1.0f, 0.6f, 0.0f);
 
 
     glEnd();
@@ -1094,14 +1096,14 @@ void drawFishingPole1()
 }
 
 
- //DDA Line
+//DDA Line
 
-   /* x1 = 62.95, y1 = 71.06
-   x2 = 62.95, y2 = 41.35
-   dx = x2 - x1 = 0
-   dy = y2 - y1 = -29.71
-   m = max(|dx|, |dy|) = 29.71 ≈ 30
-   */
+/* x1 = 62.95, y1 = 71.06
+x2 = 62.95, y2 = 41.35
+dx = x2 - x1 = 0
+dy = y2 - y1 = -29.71
+m = max(|dx|, |dy|) = 29.71 ≈ 30
+*/
 
 void drawfishingRope(float x1, float y1, float x2, float y2)
 {
@@ -1145,7 +1147,7 @@ void drawGateRoad()
 {
     if (isNight)
     {
-       glColor3f(70.0/255, 40.0/255, 30.0/255); //for night
+        glColor3f(70.0/255, 40.0/255, 30.0/255); //for night
     }
     else
     {
@@ -1366,26 +1368,27 @@ void drawHuman()
     glEnd();
 
     //ear
-  /*  glColor3f();
-    glBegin(GL_POLYGON);
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
-    glVertex2f();
+    /*  glColor3f();
+      glBegin(GL_POLYGON);
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
+      glVertex2f();
 
-    glEnd();
-    */
+      glEnd();
+      */
 }
 
 
 
 //Beizer Curve
 //counter human smile
-struct Point {
+struct Point
+{
     float x, y;
 };
 
@@ -1444,7 +1447,7 @@ void drawCounterHuman()
     glVertex2f(-286.544291205579, 40.0031177376627);
     glVertex2f(-288.12316117403, 46.3200231726795);
     //glVertex2f(-291.6159398841482, 44.9188297726934);
-   // glVertex2f(-295.7474566589726, 44.7847720149645);
+    // glVertex2f(-295.7474566589726, 44.7847720149645);
     glVertex2f(-299.0471264751023, 45.81634350643);
 
     glEnd();
@@ -1499,7 +1502,7 @@ void drawCounterHuman()
     glEnd();
 
     //hair
-    glColor3f(0.0, 0.0 ,0.0);
+    glColor3f(0.0, 0.0,0.0);
     glBegin(GL_POLYGON);
     glVertex2f(-305.4132559300641, 55.9361257980948);
     glVertex2f(-313.1044859923751, 61.3901570557295);
@@ -1528,15 +1531,15 @@ void drawCounterHuman()
     //mouth
 
     /*
-=======
->>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
+    =======
+    >>>>>>> e9864c1692ce785e99b2c0814bec6f1e32029817
     glColor3f(0.0f, 0.0f, 0.0f);
     glBegin(GL_LINES);
     glVertex2f(-296.9610873182411, 49.8432505230676);
     glVertex2f(-290, 50);
 
     glEnd();
-<<<<<<< HEAD
+    <<<<<<< HEAD
     */
 
     //smile
@@ -1639,8 +1642,8 @@ void drawList()
     glBegin(GL_LINES);
 
     BresalhamMidLine(-237.6407955146785, 75.969235672092,-222.8512080597141, 76.0500530898911);
-   // glVertex2f(-237.6407955146785, 75.969235672092);
-   // glVertex2f(-222.8512080597141, 76.0500530898911);
+    // glVertex2f(-237.6407955146785, 75.969235672092);
+    // glVertex2f(-222.8512080597141, 76.0500530898911);
 
     glVertex2f(-237.6407955146785, 75.969235672092);
     glVertex2f(-222.8512080597141, 76.0500530898911);
@@ -1972,10 +1975,12 @@ void updateHuman2()
 }
 
 
-void drawText(float x, float y, char *string) {
+void drawText(float x, float y, char *string)
+{
     glRasterPos2f(x, y);
 
-    while (*string) {
+    while (*string)
+    {
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, *string);
         string++;
     }
@@ -1998,7 +2003,8 @@ void drawWinterPoolCircle()
 
 
 
-void display() {
+void display()
+{
     glClear(GL_COLOR_BUFFER_BIT);
 
     glMatrixMode(GL_MODELVIEW);
@@ -2007,15 +2013,15 @@ void display() {
     //sky
     if (isNight)
     {
-    glColor3f(0.0f, 0.0f, 0.0f);
+        glColor3f(0.0f, 0.0f, 0.0f);
     }
     else if (isWinter || isRaining)
     {
-    glColor3f(0.75f, 0.80f, 0.85f); // winter sky (pale blue)
+        glColor3f(0.75f, 0.80f, 0.85f); // winter sky (pale blue)
     }
     else
     {
-    glColor3f(0.082, 0.396, 0.753);
+        glColor3f(0.082, 0.396, 0.753);
     }
     drawskyBG();
 
@@ -2035,15 +2041,15 @@ void display() {
     //Ground BG
     if (isWinter)
     {
-    glColor3f(1.0f, 1.0f, 1.0f); // snow
+        glColor3f(1.0f, 1.0f, 1.0f); // snow
     }
     else if (isNight)
     {
-    glColor3f(50.0/255, 100.0/255, 70.0/255);
+        glColor3f(50.0/255, 100.0/255, 70.0/255);
     }
     else
     {
-    glColor3f(102.0/255, 187.0/255, 106.0/255);
+        glColor3f(102.0/255, 187.0/255, 106.0/255);
     }
     drawGrounBG();
 
@@ -2063,29 +2069,29 @@ void display() {
     //Counter side trees
     if (isWinter)
     {
-    glColor3f(0.9f, 0.9f, 0.9f); // snow leaves
+        glColor3f(0.9f, 0.9f, 0.9f); // snow leaves
     }
     else if (isNight)
     {
-    glColor3f(0.10f, 0.35f, 0.18f);
+        glColor3f(0.10f, 0.35f, 0.18f);
     }
     else
     {
-    glColor3f(0.20f, 0.65f, 0.30f);
+        glColor3f(0.20f, 0.65f, 0.30f);
     }
     drawBTree();
 
     if (isWinter)
     {
-    glColor3f(0.9f, 0.9f, 0.9f); // snow leaves
+        glColor3f(0.9f, 0.9f, 0.9f); // snow leaves
     }
     else if (isNight)
     {
-    glColor3f(0.10f, 0.35f, 0.18f);
+        glColor3f(0.10f, 0.35f, 0.18f);
     }
     else
     {
-    glColor3f(0.20f, 0.65f, 0.30f);
+        glColor3f(0.20f, 0.65f, 0.30f);
     }
     drawSTree();
 
@@ -2123,15 +2129,15 @@ void display() {
     //winter pond water
     if (isWinter)
     {
-    glColor3f(1.0f, 1.0f, 1.0f); // snow
+        glColor3f(1.0f, 1.0f, 1.0f); // snow
     }
     else if (isNight)
     {
-    glColor3f(50.0/255, 100.0/255, 70.0/255);
+        glColor3f(50.0/255, 100.0/255, 70.0/255);
     }
     else
     {
-    glColor3f(102.0/255, 187.0/255, 106.0/255);
+        glColor3f(102.0/255, 187.0/255, 106.0/255);
     }
     drawWinterPoolCircle();
 
@@ -2215,28 +2221,29 @@ void display() {
 //Keyboard function
 void keyboard(unsigned char key, int x, int y)
 {
+    key = tolower(key);
     switch (key)
     {
-        case 'w':
+    case 'w':
         isWinter = !isWinter;
 
         if(isWinter)
-            {
-                isRaining = 0;
-                isFoggy = 0;
-            }
+        {
+            isRaining = 0;
+            isFoggy = 0;
+        }
 
 
         glutPostRedisplay();
         break;
 
-        case 'r':
+    case 'r':
         isRaining = !isRaining;
 
         if(isRaining)
-            {
-                isWinter = 0;
-            }
+        {
+            isWinter = 0;
+        }
 
 
         isFoggy = !isFoggy;
@@ -2289,16 +2296,25 @@ void timer(int value)
 }
 
 
+void print()
+{
+    cout<<"PRESS W FOR WINTER"<<endl;
+    cout<<"PRESS R FOR RAINY SEASON"<<endl;
+    cout<<"FOR DAY MODE PRESS LEFT"<<endl;
+    cout<<"FOR NIGHT MODE PRESS RIGHT"<<endl;
+}
 
-
-void init() {
+void init()
+{
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluOrtho2D(-450, 464, -200, 284);
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
+    print();
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(1900, 1200);
@@ -2315,5 +2331,6 @@ int main(int argc, char** argv) {
     glutMouseFunc(mouse);
 
     glutMainLoop();
+
     return 0;
 }
